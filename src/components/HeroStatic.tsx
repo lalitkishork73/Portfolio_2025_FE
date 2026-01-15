@@ -7,9 +7,9 @@ export default function HeroStatic () {
       <div className="absolute inset-0 bg-[url('/nasa-space.jpg')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2  gap-3 md:gap-10 max-w-5xl w-full overflow-scroll">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2  gap-3 md:gap-10 max-w-5xl w-full overflow-scroll md:overflow-visible">
         <HeroProfileCard />
-        <HeroSystemCard />
+        {/* <HeroSystemCard /> */}
       </div>
     </div>
   )
