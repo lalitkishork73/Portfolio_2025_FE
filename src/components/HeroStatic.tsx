@@ -1,5 +1,5 @@
 import { HeroProfileCard } from "./HeroProfileCard"
-import { HeroSystemCard } from "./HeroSystemCard"
+// import { HeroSystemCard } from "./HeroSystemCard"
 
 export default function HeroStatic () {
   return (
