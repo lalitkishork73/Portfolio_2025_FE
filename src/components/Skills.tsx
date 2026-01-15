@@ -48,7 +48,7 @@ export default function Skills () {
     return (
         <section
             ref={sectionRef}
-            className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-24"
+            className="min-h-screen md:h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-24"
         >
             <h2 className="text-4xl md:text-5xl font-semibold mb-12">
                 Skills

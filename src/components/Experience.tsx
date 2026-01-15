@@ -58,11 +58,11 @@ export default function Experience () {
         <>
             <section
                 ref={sectionRef}
-                className="relative h-screen bg-black text-white overflow-hidden"
+                className="relative h-screen bg-black text-white overflow-hidden "
             >
                 {/* Title */}
-                <div className="absolute top-20 left-1/2 -translate-x-1/2 z-20">
-                    <h2 className="text-4xl md:text-5xl font-semibold">
+                <div className="absolute inset-0 md:top-20 left-1/2 -translate-x-1/2 z-20">
+                    <h2 className="text-4xl md:text-5xl font-semibold text-center">
                         Experience
                     </h2>
                 </div>
@@ -80,7 +80,7 @@ export default function Experience () {
                     "
                 >
                     {experienceData.map((item) => (
-                        <div key={item.id} className="relative min-w-[440px]">
+                        <div key={item.id} className="relative min-w-[440px] md:min-w-[600px]  ">
                             {/* Year Line */}
                             <div className="absolute -top-16 left-4 flex flex-col items-center">
                                 <span className="text-sm text-cyan-400 font-medium">

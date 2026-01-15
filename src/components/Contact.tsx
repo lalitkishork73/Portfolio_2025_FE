@@ -9,7 +9,7 @@ interface ContactData {
 
 export default function Contact () {
     return (
-        <div className="md:h-screen h-full bg-black text-white flex flex-col items-center justify-center px-6">
+        <div className="min-h-screen md:h-screen h-full bg-black text-white flex flex-col items-center justify-center px-6">
 
             {/* Section Title */}
             <h2 className="text-4xl md:text-5xl font-semibold mb-12">

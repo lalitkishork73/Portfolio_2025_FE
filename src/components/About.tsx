@@ -42,7 +42,7 @@ export default function About () {
     return (
         <section
             ref={sectionRef}
-            className="h-screen flex flex-col items-center justify-center px-6 text-center bg-black text-white"
+            className="min-h-screen md:h-screen flex flex-col items-center justify-center py-auto px-6 text-center bg-black text-white py-24"
         >
             {/* Headline */}
             <h2 className="text-4xl md:text-5xl font-semibold mb-6">
@@ -56,7 +56,7 @@ export default function About () {
                 My work emphasizes clean architecture, performance, and long-term
                 maintainability.
             </p>
-
+ 
             {/* Pillars */}
             <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl w-full">
                 {[

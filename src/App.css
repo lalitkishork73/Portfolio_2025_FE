@@ -25,3 +25,84 @@ section {
 .skills { z-index: 4; }
 .projects { z-index: 5; }
 .contact { z-index: 6; }
+
+
+/* -------------------------------
+   Slow pulse glow
+-------------------------------- */
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.4 }
+  50% { opacity: 0.8 }
+}
+.animate-pulseSlow {
+  animation: pulseSlow 2.5s ease-in-out infinite;
+}
+
+/* -------------------------------
+   Glitch text effect (subtle)
+-------------------------------- */
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: "EVANGELION";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+}
+
+.glitch::before {
+  color: cyan;
+  transform: translate(1px, -1px);
+  animation: glitch 2.5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  color: white;
+  transform: translate(-1px, 1px);
+  animation: glitch 3s infinite linear alternate;
+}
+
+@keyframes glitch {
+  0% { clip-path: inset(0 0 90% 0); }
+  50% { clip-path: inset(10% 0 10% 0); }
+  100% { clip-path: inset(90% 0 0 0); }
+}
+
+/* -------------------------------
+   Typewriter flicker
+-------------------------------- */
+.typewriter {
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.7 }
+  50% { opacity: 1 }
+}
+
+/* -------------------------------
+   Loader bars
+-------------------------------- */
+.loader-bar {
+  width: 6px;
+  height: 18px;
+  background: rgba(34, 211, 238, 0.8);
+  animation: barPulse 1.2s infinite ease-in-out;
+}
+
+.animation-delay-150 {
+  animation-delay: 0.15s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+@keyframes barPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
