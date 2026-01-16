@@ -1,0 +1,12 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lalitkishor.vercel.app/</loc>
+    <image:image>
+      <image:loc>
+        https://lalitkishor.vercel.app/images/profile/lalitkishor-kanojiya-full-stack-developer.webp
+      </image:loc>
+      <image:title>Lalitkishor</image:title>
+    </image:image>
+  </url>
+</urlset>
